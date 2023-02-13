@@ -607,6 +607,11 @@ class BetterPlayerController {
       _postControllerEvent(BetterPlayerControllerEvent.hideFullscreen);
     }
   }
+ 
+   ///Set full screen value based on current fullscreen state.
+  void toggleFullScreenValue() {
+    _isFullScreen = !_isFullScreen;
+    }
 
   ///Start video playback. Play will be triggered only if current lifecycle state
   ///is resumed.
